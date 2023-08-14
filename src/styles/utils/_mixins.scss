@@ -1,6 +1,32 @@
-@mixin hover($_property, $_toValue) {
-  transition: #{$_property} 0.3s;
+@mixin onTablet {
+  @media (min-width: $media-tablet) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (min-width: $media-desktop) {
+    @content;
+  }
+}
+
+@mixin headerTop {
+  display: grid;
+  grid-template-columns: auto $icon-size-phone $icon-size-phone;
+  align-items: center;
+  gap: 30px;
+
+  @include onTablet {
+    grid-template-columns: auto $icon-size-tablet $icon-size-tablet;
+  }
+}
+
+@mixin menuLinkHover {
+  border-bottom: 1px solid transparent;
+
+  transition: border-color 0.2s;
+
   &:hover {
-    #{$_property}: $_toValue;
+    border-color: $black-color;
   }
 }
