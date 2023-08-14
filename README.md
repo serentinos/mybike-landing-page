@@ -1,4 +1,10 @@
-# Base layout template with Gulp, SCSS and Stylelint
-1. Create a repo using this template
-1. Replace `<your_account>` and `<repo_name>` with your Github username and the new repo name
-    - [DEMO LINK](https://<your_account>.github.io/<repo_name>/)
+# My Bike Landing page
+
+This is a landing page for an e-commerce shop that sells high-quality bikes.
+
+For this page I used next technologies:
+- HTML 5
+- SCSS
+- JS (For animations I use AOS.js)
+
+
